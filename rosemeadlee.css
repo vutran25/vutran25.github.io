@@ -1,0 +1,9 @@
+h1{
+	color: red;
+	text-align: center;
+}
+img{
+	float: left;
+	width: 90%;
+	margin: 5%;
+}
