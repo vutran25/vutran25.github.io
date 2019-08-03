@@ -1,9 +1,15 @@
 h1{
-	color: red;
+	color: rgb(70, 43, 221);
 	text-align: center;
+	visibility: hidden;
 }
 img{
+	visibility: hidden;
 	float: left;
 	width: 90%;
 	margin: 5%;
+}
+
+form{
+	text-align	: center;
 }
