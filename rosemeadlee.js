@@ -21,13 +21,21 @@ function checkPassword() {
     // If same return True. 
     else{ 
         showImage();
+        hideSubmitBox();
         return true; 
     } 
 } 
 
 function showImage(){
     var img = document.getElementById("scheduleImage");
-    var headline = document.getElementById("headline")
+    var headline = document.getElementById("headline");
     img.style.visibility = "visible";
     headline.style.visibility = "visible";
+}
+
+function hideSubmitBox(){
+    var submitbox = document.getElementById("pw");
+    var submitbotton = document.getElementById("submitbutton");
+    submitbox.style.display = "none";
+    submitbotton.style.display = "none";
 }
