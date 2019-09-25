@@ -2,15 +2,35 @@
 <html>
 <head>
 	<title>Rosemead Lee's</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="rosemeadlee.css">
+	
 </head>
 <body>
-	<h1 id="headline">Employees Work Schedule</h1>
-	<form id="form">
-		<input type="password" name="pwd" placeholder="Password" id="pw"><br>
-		<input type="submit" name="submit" value="Submit" id="submitbutton">	
-		<image src="schedule.jpg" id="scheduleImage">
-	</form>
+		
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container-fluid">
+				  <div class="navbar-header">
+						<a class="navbar-brand" href="index.html">Rosemead Lee's Employees Schedule</a>
+						<form id="form" class="navbar-form navbar-left" role="search">
+							<div class="form-group">
+							  <input type="password" name="pwd" id="pw" class="form-control" placeholder="Password">
+							</div>
+							<button type="submit" name="submit" value="Submit" id="submitbutton" class="btn btn-success">Submit</button>
+						</form>
+				  </div>
+				</div>
+		</nav>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="thumbnail">
+						<image src="sept14.jpeg" id="scheduleImage">
+					</div>
+				</div>
+			</div>
+		</div>	
+	
 <script src="rosemeadlee.js"></script>
 </body>
 </html>

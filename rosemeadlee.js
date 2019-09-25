@@ -1,6 +1,7 @@
         
 // Function to check Whether both passwords 
 // is same or not. 
+let employees = ['vu','dung','hoa','phuong','linh'];
 document.getElementById("form").addEventListener("submit",function(e){
     e.preventDefault();
     checkPassword();
@@ -13,7 +14,7 @@ function checkPassword() {
         alert ("Please enter Password"); 
  
     // If Not same return False.     
-    else if (password != "8779") { 
+    else if (!employees.includes(password)) { 
         alert ("\nPassword did not match: Please try again...") 
         return false; 
     } 
@@ -21,21 +22,20 @@ function checkPassword() {
     // If same return True. 
     else{ 
         showImage();
-        hideSubmitBox();
+        hidePassWord();
         return true; 
     } 
 } 
 
 function showImage(){
     var img = document.getElementById("scheduleImage");
-    var headline = document.getElementById("headline");
-    img.style.visibility = "visible";
-    headline.style.visibility = "visible";
+    img.style.visibility = "visible";  
 }
 
-function hideSubmitBox(){
-    var submitbox = document.getElementById("pw");
-    var submitbotton = document.getElementById("submitbutton");
-    submitbox.style.display = "none";
-    submitbotton.style.display = "none";
+function hidePassWord(){
+    var password = document.getElementById("pw"); 
+    var btn = document.getElementById("submitbutton");
+    password.style.visibility = "hidden";
+    btn.style.visibility = "hidden";  
+
 }

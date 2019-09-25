@@ -1,3 +1,6 @@
+body{
+	padding-top: 70px;
+}
 h1{
 	color: rgb(70, 43, 221);
 	text-align: center;
@@ -5,11 +8,12 @@ h1{
 }
 img{
 	visibility: hidden;
-	float: left;
-	width: 90%;
-	margin: 5%;
 }
 
 form{
 	text-align	: center;
+}
+
+.navbar-inverse .navbar-brand{
+	color: white;
 }
